@@ -15,6 +15,7 @@ document.head.appendChild(precon);
 precon=document.createElement('link');
 precon.rel='preconnect';
 precon.href='https://fonts.gstatic.com';
+precon.crossorigin='crossorigin';
 document.head.appendChild(precon);
 maincss.rel=pagecss.rel=sidecss.rel=monofont.rel=mainfont.rel='stylesheet';
 maincss.href='/style/main.css';
