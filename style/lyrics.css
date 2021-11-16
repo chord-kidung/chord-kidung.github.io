@@ -5,5 +5,5 @@
 .hsp{margin-bottom:1em;}
 .chord{font-size:11pt;}
 .verse{
-    font-family: 'FantasqueSansMonoRegular',monospace;
+    font-family: var(--monospace);
 }
