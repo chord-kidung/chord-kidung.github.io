@@ -26,6 +26,7 @@ if(ptype=='post'){
 mainfont.href='https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap';
 monofont.href="https://fontlibrary.org//face/fantasque-sans-mono";
 document.head.appendChild(maincss);
+document.head.appendChild(mainfont);
 document.head.appendChild(pagecss);
 document.head.appendChild(sidecss);
 document.head.appendChild(monofont);
