@@ -19,7 +19,7 @@ function header(){
     hambisi.classList.add('hambisi','hambbwh');
     hamb.appendChild(hambisi);
     hedr.insertAdjacentElement('afterend',nav);
-    var menu=['Kidung Jemaat|||/kj/list.html','Label 2|||/post/label2/list.html','About|||/doc/about/about.html'];
+    var menu=['Kidung Jemaat|||/kj/','Label 2|||/post/label2/','About|||/doc/about/'];
     for(var i=0;i<menu.length;i++){
         var aa=menu[i].split('|||');
         var ab=document.createElement('a');
