@@ -35,9 +35,14 @@ function labeling(){
     labels.appendChild(label);
 }
 function titlegen(){
-    var posttitle=document.querySelector('h1.post-title');
     var pagetitle=document.querySelector('title');
-    pagetitle.innerText=`${posttitle} | ${post_data.blog[0].title}`;
+    if(ptype=='post'){
+        var posttitle=document.getElementsByClassName('.post-title');
+        pagetitle.innerText=`${posttitle} | ${post_data.blog[0].title}`;
+    }
+    else if(ptype=='home'){
+        pagetitle.innerText=`Halaman Utama | ${post_data.blog[0].title}`;
+    }
 }
 window.onload=function(){
     labeling();
