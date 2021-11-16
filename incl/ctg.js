@@ -37,7 +37,7 @@ function labeling(){
 function titlegen(){
     var pagetitle=document.createElement('title');
     if(ptype=='post'){
-        var posttitle=document.getElementsByClassName('.post-title')[0];
+        var posttitle=document.getElementsByClassName('post-title')[0];
         pagetitle.innerText=`${posttitle.innerHTML} | ${post_data.blog[0].title}`;
     }
     else if(ptype=='home'){
