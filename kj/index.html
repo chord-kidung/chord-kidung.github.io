@@ -15,7 +15,20 @@
     <div class="container">
         <div class="post-outer">
             <div class="post">
-               
+               <h1 class="post-title">Kidung Jemaat</h1>
+               <div class="article">
+                   <h2 class='inH'>Daftar lagu Kidung Jemaat</h2>
+                    <script>
+                        for(var i=0;i<post_data.categories.length;i++){
+                            var ol=document.createElement(ol),li=document.createElement('li'),a=document.createElement('a');
+                            document.getElementsByClassName('article')[0].appendChild(ol);
+                            ol.appendChild(li);
+                            a.innerHTML=post_data.posts[i].title;
+                            a.href=post_data.posts[i].url;
+                            li.appendChild(a);
+                        }
+                    </script>
+               </div>
             </div>
             <div class="sidebar">
                 <div class="sidemenu">

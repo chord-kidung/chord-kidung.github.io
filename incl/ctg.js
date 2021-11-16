@@ -16,7 +16,7 @@ const post_data={
         {
             title:"KJ 400 - Kudaki Jalan Mulia",
             cat:'Kidung Jemaat',
-            url:'/kj/kj-400-kudaki-jalan-mulia/kj-400.html',
+            url:'/kj/kj-400/',
             thumb:0,
             published:'2021-11-16T13:37:00+07:00',
             song_id:400
