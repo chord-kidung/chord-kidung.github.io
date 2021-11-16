@@ -35,8 +35,11 @@ function labeling(){
     labels.appendChild(label);
 }
 function titlegen(){
-    
+    var posttitle=document.querySelector('h1.post-title');
+    var pagetitle=document.querySelector('title');
+    pagetitle.innerText=`${posttitle} | ${post_data.blog[0].title}`;
 }
 window.onload=function(){
     labeling();
+    titlegen();
 }
