@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:  /incl
+Disallow:  /style
+
+Sitemap: https://bennyes.my.id/sitemap.xml
