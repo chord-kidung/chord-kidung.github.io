@@ -35,7 +35,7 @@ function labeling(){
     labels.appendChild(label);
 }
 function titlegen(){
-    var pagetitle=document.querySelector('title');
+    var pagetitle=document.createElement('title');
     if(ptype=='post'){
         var posttitle=document.getElementsByClassName('.post-title');
         pagetitle.innerText=`${posttitle} | ${post_data.blog[0].title}`;
