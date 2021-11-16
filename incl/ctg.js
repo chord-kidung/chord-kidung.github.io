@@ -37,8 +37,7 @@ function labeling(){
 function titlegen(){
     var pagetitle=document.createElement('title');
     if(ptype=='post'){
-        var posttitle=document.getElementsByClassName('post-title')[0];
-        pagetitle.innerText=`${posttitle.innerHTML} | ${post_data.blog[0].title}`;
+        pagetitle.innerText=`${post_data.posts[pn].title} | ${post_data.blog[0].title}`;
     }
     else if(ptype=='home'){
         pagetitle.innerText=`Halaman Utama | ${post_data.blog[0].title}`;
