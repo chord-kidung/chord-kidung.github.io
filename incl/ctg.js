@@ -43,6 +43,8 @@ function titlegen(){
     else if(ptype=='home'){
         pagetitle.innerText=`Halaman Utama | ${post_data.blog[0].title}`;
     }
+    else{pagetitle.innerText='TEST';}
+    document.head.appendChild(pagetitle);
 }
 window.onload=function(){
     labeling();
