@@ -1,0 +1,37 @@
+.top-img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+h1#post-title{margin-bottom:9px;}
+.pprop{margin-bottom:20px;}
+.pprop time{font-size:9pt;}
+.post-outer{
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.post {
+    width: 65%;
+}
+.sidebar {
+    width: 32%;
+}
+.container {
+    margin:3em 1em;
+}
+.article{margin:20px 0;}
+#song-prop,.selectnada,.song-nada{margin-bottom:2em;}
+.verse{font-size:12pt;margin-bottom:2em;}
+.line{margin-bottom:5px;}
+.reff,.ktk{margin-left:2em;}
+.hsp{margin-bottom:1em;}
+#post-title,.pprop time{color:var(--color1)}
+@media(max-width:650px){
+    .post{margin-bottom:30px;}
+    .container{margin:2%;}
+    .post-outer{flex-direction:column;padding:2%;}
+    .post,.sidebar{width:100%;}
+}

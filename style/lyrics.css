@@ -1,0 +1,9 @@
+#song-prop,.selectnada,.song-nada{margin-bottom:2em;}
+.verse{font-size:12pt;margin-bottom:2em;}
+.line{margin-bottom:5px;}
+.reff,.ktk{margin-left:2em;}
+.hsp{margin-bottom:1em;}
+.chord{font-size:11pt;}
+.verse{
+    font-family: 'FantasqueSansMonoRegular',monospace;
+}
