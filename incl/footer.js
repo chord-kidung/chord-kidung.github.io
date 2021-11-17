@@ -1,5 +1,5 @@
 function footer(){
-    var footmenu=['About|||/doc/about/','Privacy policy|||/doc/privacy-policy/','Contact|||/doc/contact/'],footr=document.createElement('footer'),botmmn=document.createElement('div');
+    var footmenu=['Tentang situs|||/doc/about/','Kebijakan privasi|||/doc/privacy-policy/','Syarat dan ketentuan|||/doc/terms-of-use/','Kontak|||/doc/contact/'],footr=document.createElement('footer'),botmmn=document.createElement('div');
     document.body.insertAdjacentElement('beforeend',footr);
     botmmn.classList.add('footer-menu');
     footr.appendChild(botmmn);

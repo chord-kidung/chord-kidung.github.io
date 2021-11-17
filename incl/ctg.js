@@ -23,29 +23,14 @@ const post_data={
         }
     ]
 }
-function labeling(){
-    var labels=document.getElementById('label');
-    var label=document.createElement('a');
-    for(var i=0;i<post_data.categories.length;i++){
-        if(post_data.categories[i].title.includes(post_data.posts[pn].cat)){
-            label.href=post_data.categories[i].url;
-            label.innerHTML=post_data.posts[i].cat;
-        }
-    }
-    labels.appendChild(label);
-}
 function titlegen(){
     var pagetitle=document.createElement('title');
-    if(ptype=='post'){
-        pagetitle.innerText=`${post_data.posts[pn].title} | ${post_data.blog[0].title}`;
-    }
-    else if(ptype=='home'){
-        pagetitle.innerText=`Halaman Utama | ${post_data.blog[0].title}`;
-    }
-    else{pagetitle.innerText='TEST';}
+    if(ptype=='post')pagetitle.innerText=`${post_data.posts[pn].title} | ${post_data.blog[0].title}`;
+    else if(ptype=='home')pagetitle.innerText=`Halaman Utama | ${post_data.blog[0].title}`;
+    else if(ptype='doc')if(pdiv=='about')pagetitle.innerText=`Tentang ${post_data.blog[0].title}`;
+    else pagetitle.innerText='TEST';
     document.head.appendChild(pagetitle);
 }
 window.onload=function(){
-    labeling();
     titlegen();
 }

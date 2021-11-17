@@ -8,7 +8,8 @@
     <script src="/incl/dtm.js"></script>
     <script src="/incl/chord.js"></script>
     <script src="/incl/ctg.js"></script>
-    <script>var pn=0;</script>
+    <script src="/incl/labelling.js"></script>
+    <script>var pn=0;pdiv=0</script>
 </head>
 <body>
     <div class="container">
@@ -16,6 +17,13 @@
             <div class="post">
                 <h1 id="post-title">KJ 400 - Kudaki Jalan Mulia</h1>
                 <span class="pprop"><time datetime='2021-10-25T13:56:00+07:00'></time></span>
+                <script>const songdata={
+                    nmb:'KJ-XXX',
+                    asli:'I’m Pressing on the Upward Way / Higher Ground',bhsasli:'Inggris',
+                    musik:{namadepan:'Charles',namatengah:'H.',namabelakang:'Gabriel',jr:0,tahun:1898},
+                    lirik:{namadepan:'Johnson',namatengah:'',namabelakang:'Oatman',jr:1,tahun:1898},
+                    terj:{lembaga:true,namalem:'Yamuger',namadepan:'',namatengah:'',namabelakang:'',tahun:1984},
+                };</script>
                 <div class='article'>
                     <div id="song-prop">
                     </div>
@@ -84,6 +92,6 @@
             </div>
         </div>
     </div>
-    <script>header();footer();datetime();numtochr();songprop();</script>
+    <script>header();footer();datetime();numtochr();songprop();labeling();</script>
 </body>
 </html>
