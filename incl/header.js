@@ -3,7 +3,7 @@ function header(){
     document.body.insertAdjacentElement('afterbegin',hedr);
     logo.classList.add('logo');
     logo.href='/';
-    logo.innerHTML='Chord Rohani';
+    logo.innerHTML='Chord Kidung';
     hedr.appendChild(logo);
     menubutton.classList.add('menubutton');
     hedr.appendChild(menubutton);
