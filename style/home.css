@@ -1,10 +1,14 @@
-.parts-home{
+.mey{
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.welcome-msg{
-    font-size:24pt;
+.welcome-msg {
+    display: flex;
+    height: 100px;
+    font-size: 24pt;
     font-weight: bolder;
+    justify-content: center;
+    align-items: center;
 }

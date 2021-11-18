@@ -3,16 +3,33 @@
 <head>
     <script>var ptype='home',pdiv=0;</script>
     <script src="/incl/header.js"></script>
-    <script src="/incl/footer.js"></script>
     <script src="/incl/head.js"></script>
+    <script src="/incl/footer.js"></script>
+    <script src="/incl/dtm.js"></script>
+    <script src="/incl/chord.js"></script>
+    <script src="/incl/ctg.js"></script>
+    <script src="/incl/labelling.js"></script>
     <script src="/incl/title.js"></script>
 </head>
 <body>
     <script>header();</script>
-    <div class="parts-home">
-        <span class="welcome-msg">Welcome to this site!</span>
+    <div class="container">
+        <div class="welcome-msg"><h1>Selamat datang di Chord Kidung!</h1></div>
+        <div class="mey" id='kj'>
+            <h2 class="wad">Kidung Jemaat</h2>
+            <script>
+                for(var i=0;i<post_data.categories.length;i++){
+                    var ol=document.createElement('ol'),li=document.createElement('li'),a=document.createElement('a');
+                    document.getElementById('kj').appendChild(ol);
+                    ol.appendChild(li);
+                    a.innerHTML=post_data.posts[i].title;
+                    a.href=post_data.posts[i].url;
+                    li.appendChild(a);
+                }
+            </script>
+            <a href="/kj/">Daftar lengkap</a>
+        </div>
     </div>
-    <a href="post/label1/test/test.html"></a>
     <script>footer();</script>
 </body>
 </html>
