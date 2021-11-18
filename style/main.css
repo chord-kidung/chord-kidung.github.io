@@ -152,5 +152,5 @@ h1#post-title{margin-bottom:9px;}
 .hambbwh{transform: rotate(-45deg);position:relative;bottom:1px;}
 .menuclicked>.menutext{top:-15px;}
 .menuclicked>.hamb{top:-5px;}
-.article ul{list-style-type:disc;}
+.article ul{list-style-type:disc;list-style-position: inside;}
 .tt2{padding:0 5px;}
