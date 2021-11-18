@@ -1,0 +1,17 @@
+.container {
+    margin:3em 1em;
+}
+.post-outer{padding:0 3em;display: flex;}
+.article{margin:20px 0;}
+.post {
+    width: 65%;
+}
+.sidebar {
+    width: 32%;
+}
+@media(max-width:650px){
+    .post{margin-bottom:30px;}
+    .container{margin:2%;}
+    .post-outer{flex-direction:column;padding:2%;}
+    .post,.sidebar{width:100%;}
+}

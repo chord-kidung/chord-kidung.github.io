@@ -23,11 +23,6 @@ h1#post-title{margin-bottom:9px;}
     margin:3em 1em;
 }
 .article{margin:20px 0;}
-#song-prop,.selectnada,.song-nada{margin-bottom:2em;}
-.verse{font-size:12pt;margin-bottom:2em;}
-.line{margin-bottom:5px;}
-.reff,.ktk{margin-left:2em;}
-.hsp{margin-bottom:1em;}
 #post-title,.pprop time{color:var(--color1)}
 @media(max-width:650px){
     .post{margin-bottom:30px;}
