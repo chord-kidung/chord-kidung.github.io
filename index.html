@@ -15,18 +15,20 @@
     <script>header();</script>
     <div class="container">
         <div class="welcome-msg"><h1>Selamat datang di Chord Kidung!</h1></div>
-        <div class="mey" id='kj'>
+        <div class="mey songlist" id='kj'>
             <h2 class="wad">Kidung Jemaat</h2>
-            <script>
-                for(var i=0;i<post_data.categories.length;i++){
-                    var ol=document.createElement('ol'),li=document.createElement('li'),a=document.createElement('a');
-                    document.getElementById('kj').appendChild(ol);
-                    ol.appendChild(li);
-                    a.innerHTML=post_data.posts[i].title;
-                    a.href=post_data.posts[i].url;
-                    li.appendChild(a);
-                }
-            </script>
+            <div id="list">
+                <script>
+                    for(var i=0;i<post_data.categories.length;i++){
+                        var ol=document.createElement('ol'),li=document.createElement('li'),a=document.createElement('a');
+                        document.getElementById('list').appendChild(ol);
+                        ol.appendChild(li);
+                        a.innerHTML=post_data.posts[i].title;
+                        a.href=post_data.posts[i].url;
+                        li.appendChild(a);
+                    }
+                </script>
+            </div>
             <a href="/kj/">Daftar lengkap</a>
         </div>
     </div>

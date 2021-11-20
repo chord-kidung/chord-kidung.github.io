@@ -1,8 +1,7 @@
 .mey{
     height: 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 .welcome-msg {
     display: flex;
@@ -11,4 +10,18 @@
     font-weight: bolder;
     justify-content: center;
     align-items: center;
+}
+.songlist{padding:0 10em;}
+#list,.wad{
+    margin-bottom:30px;
+}
+#list ol li{
+    list-style-type: disc;
+    margin-left: 15px;
+}
+@media(max-width:600px){
+    .songlist{padding:0 2em;}
+}
+@media(max-width:520px){
+    .welcome-msg{padding:0 10px;text-align: center;}
 }
