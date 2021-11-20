@@ -5,6 +5,8 @@ function titlegen(){
     else if(ptype=='doc'){
         if(pdiv=='about')pagetitle.innerText=`Tentang ${post_data.blog[0].title}`;
         else if(pdiv=='tos')pagetitle.innerText=`Syarat dan Ketentuan | ${post_data.blog[0].title}`;
+        else if(pdiv=='ppol')pagetitle.innerText=`Kebijakan Privasi | ${post_data.blog[0].title}`;
+        else if(pdiv=='ctc')pagetitle.innerText=`Kontak | ${post_data.blog[0].title}`;
     }
     else if(ptype=='404')pagetitle.innerText=`404 | ${post_data.blog[0].title}`;
     else pagetitle.innerText='TEST';

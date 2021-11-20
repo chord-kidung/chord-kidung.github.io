@@ -36,6 +36,7 @@ body {
 	line-height: 1;
 	font-family: var(--sans);
 	font-size: 11pt;
+	font-display: swap;
 }
 ol, ul {
 	list-style: none;
@@ -153,8 +154,9 @@ h1#post-title{margin-bottom:9px;}
 .menuclicked>.menutext{top:-15px;}
 .menuclicked>.hamb{top:-5px;}
 .article ul{list-style-type:disc;}
-.article ul,.article ol{margin-left:10px;}
+.article ul,.article ol{margin-left:20px;}
 .tt2{padding:0 5px;}
+ol.number li{list-style-type: decimal;}
 @media(max-width:600px){
 	.footer-menu{
 		flex-direction: column;
